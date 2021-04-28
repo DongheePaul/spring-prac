@@ -9,13 +9,11 @@ import java.util.List;
 import java.util.Optional;
 
 //ㅋㅋㅋ 테스트 케이스 자동완성 해주는 기능이 있네 ^^  커맨드+시프트+T ㅋㅋㅋ 기가 매키네~
-@Service
 public class MemberService {
 
 
     //회원서비스를 만들려면 회원 저장소가 있어야함
     private final MemberRepository memberRepository;
-    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
