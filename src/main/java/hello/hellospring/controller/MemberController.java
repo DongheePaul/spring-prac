@@ -21,6 +21,7 @@ public class MemberController {
     //스프링이 MemberService를 알 수 있도록 어노테이션 달아줘야함. 스프링이 DI 해준다.
     public MemberController(MemberService memberService){
         this.memberService = memberService;
+        System.out.println("memberService = " + memberService.getClass());
     }
 
     @GetMapping("/members/new")
