@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 //아래 어노테이션이 달리면 트랜잭션이 끝나고 테스트 끝나면 자동으로 롤백함. ㅋㅋ 아예 반영을 안한다는게 더 정확하다고 함. 메소드마다 적용됨.
 @Transactional
 class MemberServiceIntegrationTest {
-    
+
     @Autowired MemberService memberService;
     @Autowired
     MemberRepository memberRepository;
